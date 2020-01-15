@@ -8,30 +8,34 @@ import org.springframework.web.bind.annotation.RestController;
 public class Tarea1 {
 
     @RequestMapping("/")
-    public String index() {
-        Scanner myObj = new
-                Scanner(System.in);
-
-        System.out.println("Enter a Grade Number ");
-        int num1 = myObj.nextInt();
+    public String index(Integer num1) {
+//        Scanner myObj = new
+//                Scanner(System.in);
+//
+//        System.out.println("Enter a Grade Number ");
+//        int num1 = myObj.nextInt();
 //        int num1 = 50;
+        return calculateGrade(num1);
+    }
 
-        if (num1 < 0) {
+    public static String calculateGrade(int grade) {
+
+        if (grade < 0) {
             ;
         }
-        else if (num1 < 40) {
+        else if (grade < 40) {
             return "Grade: D";
         }
-        else if (num1 < 50) {
+        else if (grade < 50) {
             return "Grade: C";
         }
-        else if (num1 < 60) {
+        else if (grade < 60) {
             return "Grade: B";
         }
-        else if (num1 < 75) {
+        else if (grade < 75) {
             return "Grade: A";
         }
-        else if (num1 <= 100) {
+        else if (grade <= 100) {
             return "Grade: O";
         }
         return "Not a Valid Grade Number";
