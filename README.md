@@ -21,3 +21,7 @@ Tarea 1 - Primer API.
             Resultados - Results_Tree.PNG
             Gráfica - Graph_Results.PNG
 
+    Video de Ejecución -
+    
+        Ejemplo_vid.mp4
+ 
