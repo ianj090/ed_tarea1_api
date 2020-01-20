@@ -9,12 +9,6 @@ public class Tarea1 {
 
     @RequestMapping("/")
     public String index(Integer num1) {
-//        Scanner myObj = new
-//                Scanner(System.in);
-//
-//        System.out.println("Enter a Grade Number ");
-//        int num1 = myObj.nextInt();
-//        int num1 = 50;
         return calculateGrade(num1);
     }
 
